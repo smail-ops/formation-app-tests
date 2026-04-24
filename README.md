@@ -37,4 +37,4 @@ C'est tout !
 
 ## Questions ?
 
-reLire SETUP 
+relire SETUP 
