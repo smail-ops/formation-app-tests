@@ -2,30 +2,29 @@
 
 Tests automatisés pour le changement de mot de passe sur FormationApp.
 
-## Setup (5 minutes)
+### Pré-requis techniques
+Python : 3.14
+Selenium : 4.15.2
 
-### 1. Copier la configuration
-```bash
-cp config/environment.example.py config/environment.py
-```
+****SETUP****
 
-### 2. Remplir config/environment.py
-```python
-TEST_EMAIL = "votre-email@test.com"
-TEST_PASSWORD = "votre-mot-de-passe"
+### 1. Copier le script 
+
+grid.py
+
+### 2. Remplir config/grid.py
+
 XRAY_CLIENT_ID = "votre-client-id"
 XRAY_CLIENT_SECRET = "votre-secret"
-```
+
 
 ### 3. Démarrer Selenium Grid
-```bash
-docker-compose up -d
-```
+
+selenium-server standalone --port 4444
 
 ### 4. Lancer les tests
-```bash
-python run_tests.py
-```
+
+grid.py
 
 C'est tout !
 
@@ -38,4 +37,4 @@ C'est tout !
 
 ## Questions ?
 
-Lire docs/SETUP.md pour plus de détails.
+reLire SETUP 
