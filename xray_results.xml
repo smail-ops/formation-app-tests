@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite name="SeleniumGrid" tests="10">
+  <testcase name="CT-SG1" classname="selenium.grid" time="72.25" />
+  <testcase name="CT-SG2" classname="selenium.grid" time="36.8" />
+  <testcase name="CT-SG3" classname="selenium.grid" time="46.07" />
+  <testcase name="CT-SG5" classname="selenium.grid" time="73.86" />
+  <testcase name="CT-SG6" classname="selenium.grid" time="82.22" />
+  <testcase name="CT-SG4" classname="selenium.grid" time="121.1" />
+  <testcase name="CT-SG7" classname="selenium.grid" time="32.8" />
+  <testcase name="CT-SG9" classname="selenium.grid" time="34.06" />
+  <testcase name="CT-SG10" classname="selenium.grid" time="54.23">
+    <failure message="Message: &#10;Stacktrace:&#10;0   chromedriver                        0x00000001045b79b8 chromedriver + 6863288&#10;1   chromedriver                        0x00000001045af04a chromedriver + 6828106&#10;2   chromedriver                        0x0000000103f9aa15 chromedriver + 453141&#10;3   chromedriver                 " />
+  </testcase>
+  <testcase name="CT-SG8" classname="selenium.grid" time="56.45">
+    <failure message="Message: &#10;Stacktrace:&#10;0   chromedriver                        0x000000010126c9b8 chromedriver + 6863288&#10;1   chromedriver                        0x000000010126404a chromedriver + 6828106&#10;2   chromedriver                        0x0000000100c4fa15 chromedriver + 453141&#10;3   chromedriver                 " />
+  </testcase>
+</testsuite>
