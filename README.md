@@ -42,8 +42,10 @@ relire SETUP
 ## 7. Resultats 
 
 - 10 tests ( CT-SG1 a CT-SG10)
-- 8 PASS / 2 FAIL (CT-SG8, CT-SG10)
+- 8 PASS / 2 FAIL (CT-SG4, CT-SG10)
 - Cause : saturation chrome en paralléle
+
+![Screenshot CT-SG2](SCREENSHOTS-CT/CT_SG2_PASSE_20260424_165759.png)
 
 ## 8. Formation
 
