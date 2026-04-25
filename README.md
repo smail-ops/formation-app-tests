@@ -28,13 +28,23 @@ grid.py
 
 C'est tout !
 
-## Tests Inclus
+## 5. Tests Inclus
 
 - CT-SG1 : Chrome - Changement MDP
 - CT-SG2 : Firefox - Changement MDP
 - CT-SG3 : Edge - Changement MDP
 - CT-SG4 à SG10 : Validation, responsive design, etc.
 
-## Questions ?
+## 6. Questions ?
 
 relire SETUP 
+
+## 7. Resultats 
+
+- 10 tests ( CT-SG1 a CT-SG10)
+- 8 PASS / 2 FAIL (CT-SG8, CT-SG10)
+- Cause : saturation chrome en paralléle
+
+## 8. Formation
+
+Bootcamp QA - Consulting School P1-2026
