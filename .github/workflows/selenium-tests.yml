@@ -1,0 +1,38 @@
+name: Selenium Grid Tests
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 7 * * 1-5'  # chaque jour ouvré à 7h
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      selenium:
+        image: selenium/standalone-chrome:latest
+        ports:
+          - 4444:4444
+        options: --shm-size=2g
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install selenium requests
+
+      - name: Wait for Grid
+        run: sleep 10
+
+      - name: Run tests
+        env:
+          XRAY_CLIENT_ID: ${{ secrets.XRAY_CLIENT_ID }}
+          XRAY_CLIENT_SECRET: ${{ secrets.XRAY_CLIENT_SECRET }}
+        run: python grid.py
