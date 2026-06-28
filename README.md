@@ -24,7 +24,9 @@ selenium-server standalone --port 4444
 
 ### 4. Lancer les tests
 
-grid.py
+cd formation-app-tests
+python3 grid.py
+
 
 C'est tout !
 
